@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "espada",
+  "version": "${version}",
+
+  "name": "Espada AntiCheat",
+  "description": "This mod is a crumby anticheat that looks for common hacked clients and shuts down the client if it finds one.",
+  "authors": ["Vanthanyx"],
+  "contact": {
+    "homepage": "https://vanthanyx.tk/",
+    "sources": "https://github.com/Vanthanyx/Espada-AntiCheat"
+  },
+
+  "license": "MIT",
+  "icon": "assets/espada/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": ["tk.vanthanyx.espada.Espada"]
+  },
+  "mixins": ["espada.mixins.json"],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "breaks": {
+    "wurst": "*",
+    "bleachhack": "*",
+    "meteor-client": "*",
+    "inertia": "*",
+    "impact": "*",
+    "aristosis": "*",
+    "xray": "*",
+    "x-ray": "*",
+    "sigma": "*",
+    "viaforge": "*",
+    "mathax": "*"
+  }
+}
